@@ -13,7 +13,7 @@
 
 ![alt text](https://github.com/RobertWojtowicz/miscale2garmin/blob/master/pic/settings.png)
 
-## 3. Preparing your linux system
+## 3. Preparing your linux system / Raspberry Pi
 - Minimum hardware requirements are: 1 CPU, 512 MB RAM, 2 GB HDD and a network connection which means that this can run on a raspberry pi
 - Update your system and then install following modules:
 
