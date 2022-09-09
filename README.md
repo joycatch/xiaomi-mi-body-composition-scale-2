@@ -6,16 +6,16 @@
 - It allows you to fetch information of the Mi Body Composition Scale 2 (model: XMTZC05HM) and post the information securely to a given URL (using HTTP Authorization)
 
 ## 2. Acquire the MAC address of your Mi Body Composition Scale 2
-- Install Zepp Life App on your mobile device
-- Configure your scale with Zepp Life App on your mobile device
-- Retrieve scale's MAC Address from Zepp Life App and optionally turn off weighing small object in Zepp Life App for better measurement quality by going to:
+- Install the Zepp Life App on your mobile device
+- Configure your Mi Body Composition Scale 2 with the Zepp Life App on your mobile device
+- Retrieve the scale's MAC Address from the Zepp Life App and (optionally) turn off weigh small object in the app for better measurement quality by going to:
    - _Profile -> My devices -> Mi Body Composition Scale 2_
 
 ![alt text](https://github.com/RobertWojtowicz/miscale2garmin/blob/master/pic/settings.png)
 
 ## 3. Preparing your linux system / Raspberry Pi
-- Minimum hardware requirements are: 1 CPU, 512 MB RAM, 2 GB HDD and a network connection which means that this can run on a raspberry pi
-- Update your system and then install following modules:
+- Minimum hardware requirements: 1 CPU, 512 MB RAM, 2 GB HDD and a network connection which means that this can run on a Raspberry Pi
+- Update your system and then install following modules which the script requires:
 
 ```
 sudo apt-get update
@@ -24,7 +24,7 @@ sudo apt-get install wget python3 bluetooth python3-pip libglib2.0-dev -y
 sudo pip install bluepy
 ```
 
-- Modify file ```sudo nano /etc/systemd/system/bluetooth.target.wants/bluetooth.service```:
+- Then modify file ```sudo nano /etc/systemd/system/bluetooth.target.wants/bluetooth.service``` to disable SAP:
 
 ```
 ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap
