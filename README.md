@@ -5,11 +5,11 @@
   - https://github.com/RobertWojtowicz/miscale2garmin
 - It allows you to fetch information of the Mi Body Composition Scale 2 (model: XMTZC05HM) and post the information to a given URL
 
-## 2. Getting the MAC address of Mi Body Composition Scale 2 / disable weigh small object
-- Install Zepp Life App on your mobile device, user manual: https://files.xiaomi-mi.com/files/smart_scales/smart_scales-EN.pdf
+## 2. Acquire the MAC address of your Mi Body Composition Scale 2
+- Install Zepp Life App on your mobile device
 - Configure your scale with Zepp Life App on your mobile device
-- Retrieve scale's MAC Address from Zepp Life App (Profile > My devices > Mi Body Composition Scale 2);
-- Turn off weigh small object in Zepp Life App (Profile > My devices > Mi Body Composition Scale 2) for better measurement quality:
+- Retrieve scale's MAC Address from Zepp Life App and optionally turn off weighing small object in Zepp Life App for better measurement quality by going to:
+   - _Profile -> My devices -> Mi Body Composition Scale 2_
 
 ![alt text](https://github.com/RobertWojtowicz/miscale2garmin/blob/master/pic/settings.png)
 
