@@ -3,7 +3,7 @@
 ## 1. Introduction
 - This project is based on the following projects:
   - https://github.com/RobertWojtowicz/miscale2garmin
-- It allows you to fetch information of the Mi Body Composition Scale 2 (model: XMTZC05HM) and post the information to a given URL
+- It allows you to fetch information of the Mi Body Composition Scale 2 (model: XMTZC05HM) and post the information securely to a given URL (using HTTP Authorization)
 
 ## 2. Acquire the MAC address of your Mi Body Composition Scale 2
 - Install Zepp Life App on your mobile device
@@ -30,5 +30,5 @@ sudo pip install bluepy
 ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap
 ```
 
-### 4. Configuring scripts
+### 4. Configure the script
 - Update the first few lines of the ```sudo nano scan_xiaomi_scale.py``` with your MAC address (scale_mac_addr)
