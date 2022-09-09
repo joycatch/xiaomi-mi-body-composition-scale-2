@@ -14,7 +14,6 @@
 ![alt text](https://github.com/RobertWojtowicz/miscale2garmin/blob/master/pic/settings.png)
 
 ## 3. Preparing your linux system / Raspberry Pi
-- Minimum hardware requirements: 1 CPU, 512 MB RAM, 2 GB HDD and a network connection which means that this can run on a Raspberry Pi
 - Update your system and then install following modules which the script requires:
 
 ```
@@ -31,7 +30,8 @@ ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap
 ```
 
 ### 4. Configure and run the script
-- Update the first few lines of the script with your MAC address for example using
+
+- Update the first few lines of the script with your MAC address and any HTTP Authroization
 ```
 sudo nano scan_xiaomi_scale.py
 ```
@@ -40,10 +40,6 @@ Then try to run the script by executing it:
 $ python3 scan_xiaomi_scale.py
 ```
 - Finally, if everything works correctly schedule it using cron say every 3 minutes or so;
-```
-sudo crontab -e
-```
-Using
 ```
 */3 * * * * /home/martin/xiaomi-mi-body-composition-scale-2/scan_xiaomi_scale.sh
 ```
