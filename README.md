@@ -36,7 +36,6 @@ ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap
 ```
 $ python3 scan_xiaomi_scale.py
 ```
-```
 - Finally, if everything works correctly you can add the script scan_xiaomi_scale.sh to CRON to run it every say 3 minutes or so ```sudo crontab -e```
 ```
 */3 * * * * /home/martin//xiaomi-mi-body-composition-scale-2/scan_xiaomi_scale.sh
