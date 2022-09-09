@@ -14,18 +14,21 @@
 ![alt text](https://github.com/RobertWojtowicz/miscale2garmin/blob/master/pic/settings.png)
 
 ## 3. Preparing your linux system
-- Minimum hardware requirements are: 1 CPU, 512 MB RAM, 2 GB HDD, network connection;
+- Minimum hardware requirements are: 1 CPU, 512 MB RAM, 2 GB HDD and a network connection which means that this can run on a raspberry pi
 - Update your system and then install following modules:
+
 ```
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install wget python3 bluetooth python3-pip libglib2.0-dev -y
 sudo pip install bluepy
 ```
+
 - Modify file ```sudo nano /etc/systemd/system/bluetooth.target.wants/bluetooth.service```:
+
 ```
 ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap
 ```
 
 ### 4. Configuring scripts
-- Edit scan_xiaomi_scale.py by updating the scale_mac_addr
+- Update the first few lines of the ```sudo nano scan_xiaomi_scale.py``` with your MAC address (scale_mac_addr)
