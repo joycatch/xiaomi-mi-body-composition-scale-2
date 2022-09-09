@@ -42,13 +42,13 @@ class miScale(btle.DefaultDelegate):
                         data = "weight="+str(round(Weight, 2))+"&impedance="+str(round(Impedance, 2))
                         print(data)
                         response = requests.post(url, headers=headers, data=data)
-                        print("Status Code", response.status_code)
+                        print("Status Code: ", response.status_code)
                     else:
                         print("* Reading BLE data incomplete, finished BLE scan")
                         data = "weight="+str(round(Weight, 2))
                         print(data)
                         response = requests.post(url, headers=headers, data=data)
-                        print("Status Code", response.status_code)
+                        print("Status Code: ", response.status_code)
                     exit()
         else:
             print("  BLE device found with address: " + (dev.addr) + ", non-target device")
