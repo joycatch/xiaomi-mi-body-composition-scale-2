@@ -31,12 +31,19 @@ ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap
 ```
 
 ### 4. Configure and run the script
-- Update the first few lines of the ```sudo nano scan_xiaomi_scale.py``` with your MAC address (scale_mac_addr) and then 
-- Run the script by executing it:
+- Update the first few lines of the script with your MAC address for example using
+```
+sudo nano scan_xiaomi_scale.py
+```
+Then try to run the script by executing it:
 ```
 $ python3 scan_xiaomi_scale.py
 ```
-- Finally, if everything works correctly you can add the script scan_xiaomi_scale.sh to CRON to run it every say 3 minutes or so ```sudo crontab -e```
+- Finally, if everything works correctly schedule it using cron say every 3 minutes or so;
 ```
-*/3 * * * * /home/martin//xiaomi-mi-body-composition-scale-2/scan_xiaomi_scale.sh
+sudo crontab -e
+```
+Using
+```
+*/3 * * * * /home/martin/xiaomi-mi-body-composition-scale-2/scan_xiaomi_scale.sh
 ```
